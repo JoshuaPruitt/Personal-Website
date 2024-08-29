@@ -1,0 +1,15 @@
+header {
+  transform: translateX(50%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#aboutMe,
+#portfolio,
+#contactMe,
+#resume {
+  border: solid 5px red;
+  margin: 5px;
+  padding: 10px;
+}
