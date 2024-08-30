@@ -1,27 +1,25 @@
 import '../style/header.css'
-import { useState } from 'react'
+import React, { useEffect } from 'react'
+import App from '../App.jsx'
+
+const actions = [
+    {name: 'aboutMe', type: 'b1' },
+    {name: 'portfolio', type:"b2"},
+    {name: 'contactMe', type: 'b3'},
+    {name: 'resume', type: 'b4'},
+]
 
 function Header(){
-    const [text, setPage] = useState()
+    const [content, setPage] = React.useState('b1')
 
     return (
         <>
             <div>
-                <button id='aboutMe' onClick={() => setPage((text) => text = 'CLICKED')}>
-                    About Me {text}
+                {actions.map((action) => (
+                    <button key={action.type} onClick={() => setPage(App(action.type))}>
+                    {action.name}
                 </button>
-  
-                <button id="portfolio" onClick={() => setPage(console.log('portfolio clicked'))}>
-                    Portfolio
-                </button>
-  
-                <button id="contactMe" onClick={() => setPage(console.log('contact Me clicked'))}>
-                    Contact Me
-                </button>
-  
-                <button id="resume" onClick={() => setPage(console.log('resume clicked'))}>
-                    Resume
-                </button>
+                ))}
             </div>
         </>
     )

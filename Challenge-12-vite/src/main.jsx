@@ -27,5 +27,7 @@ function body(){
 header()
 body()
 
+export default body
+
 
 
