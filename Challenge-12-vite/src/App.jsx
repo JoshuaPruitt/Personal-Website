@@ -1,5 +1,6 @@
 import './style/index.css'
 import React, { useEffect, useState } from 'react'
+import PageData from './components/pages'
 
 
 const actions = [
@@ -12,35 +13,21 @@ const actions = [
 function App(){
     let pageInfo
     const [content, setPage] = useState('b1')
-
-
+    const pageData = new PageData
     
     if (content == "portfolio"){
-        pageInfo = <div>
-                    <h2>Layout 1</h2>
-                    {/* Content for layout 1 */}
-                    </div>
+      pageInfo = pageData.portfolio();
 
     } else if (content == "contactMe"){
-        pageInfo = <div>
-                    <h2>Layout 2</h2>
-                    {/* Content for layout 1 */}
-                    </div>
+      pageInfo = pageData.contactMe();
     
     } else if (content == "resume"){
-        pageInfo = <div>
-                    <h2>Layout 3</h2>
-                    {/* Content for layout 1 */}
-                    </div>
-    
+      pageInfo = pageData.resume();
+
     } else {
-        pageInfo = <div>
-                    <h2>Layout 0</h2>
-                    {/* Content for layout 1 */}
-                   </div>
+      pageInfo = pageData.aboutMe();
     }
-    
-    
+
     return (
         <>
             <header>
