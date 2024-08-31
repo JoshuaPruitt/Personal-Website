@@ -4,10 +4,10 @@ import PageData from './components/pages'
 
 
 const actions = [
-    {name: 'aboutMe', type: 'b1' },
-    {name: 'portfolio', type:"b2"},
-    {name: 'contactMe', type: 'b3'},
-    {name: 'resume', type: 'b4'},
+    {name: 'About Me', type: 'b1' },
+    {name: 'Portfolio', type:"b2"},
+    {name: 'Contact Me', type: 'b3'},
+    {name: 'Resume', type: 'b4'},
 ]
 
 function App(){
@@ -15,13 +15,13 @@ function App(){
     const [content, setPage] = useState('b1')
     const pageData = new PageData
     
-    if (content == "portfolio"){
+    if (content == "Portfolio"){
       pageInfo = pageData.portfolio();
 
-    } else if (content == "contactMe"){
+    } else if (content == "Contact Me"){
       pageInfo = pageData.contactMe();
     
-    } else if (content == "resume"){
+    } else if (content == "Resume"){
       pageInfo = pageData.resume();
 
     } else {
@@ -32,7 +32,7 @@ function App(){
         <>
             <header>
                 <div>
-                  <h2>Joshua Pruitt</h2>
+                  <h1 id='logo'>Joshua Pruitt</h1>
                 </div>
                 <nav>
                     {/* map out all buttons on the nav bar*/}
@@ -50,8 +50,7 @@ function App(){
             </div>
             
         </>
-    )
-    
+    )   
 }
 
 export default App
