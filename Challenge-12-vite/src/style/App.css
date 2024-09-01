@@ -13,7 +13,6 @@ p {
 }
 
 #projects {
-  margin: 20px;
-  padding: 50px;
-  border: red 2px dotted;
+  display: inline;
+  margin: 10px;
 }

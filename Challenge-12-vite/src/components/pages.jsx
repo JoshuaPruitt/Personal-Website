@@ -15,7 +15,21 @@ const projects = [
         link: 'https://github.com/JoshuaPruitt/Challenge-08-Vehicle-Creator-',
         img: "../src/assets/placeholder-image.jpg",
         type: 'p2'
-    }
+    },
+
+    {
+        name: 'Employee Payroll Tracker',
+        link: 'https://github.com/JoshuaPruitt/challenge-03',
+        img: '../src/assets/challenge-03-payroll-tracker.png',
+        type: 'p3'
+    },
+
+    {
+        name: 'README File Generator',
+        link: 'https://github.com/JoshuaPruitt/Challenge-07',
+        img: '../src/assets/placeholder-image.jpg',
+        type: 'p4'
+    },
 ]
 
 class PageData {
@@ -41,7 +55,7 @@ class PageData {
         return(
             <>
                 <div>
-                    <h2>Portfolio</h2>
+                    <h2>My Portfolio</h2>
                     <p>
                     This is my work!
                     </p>
@@ -49,11 +63,10 @@ class PageData {
 
                 <div>
                     {projects.map((project) => (
-                       <div id='projects' key={project.type} style={{backgroundImage: `url(${project.img})`,
-                                                                     backgroundPosition: 'center',
-                                                                     backgroundSize: 'cover',
-                                                                     backgroundRepeat: 'no-repeat'}}>
-                         <a href={project.link}>{project.name}</a>
+                       <div id='projects' key={project.type}>
+                         <a href={project.link}>
+                            <img id='greyscale' src={project.img} width='300' height='200' alt={project.name}></img>
+                         </a>
                        </div>
                     ))}
                 </div>
@@ -74,7 +87,7 @@ class PageData {
         return(
             <>
                 <div>
-                    <h2>Resume</h2>
+                    <h2>My Resume</h2>
                 </div>
             </>
     )};
