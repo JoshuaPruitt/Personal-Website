@@ -20,6 +20,13 @@ input {
   margin: 10px 0;
 }
 
+#portfolioContiner {
+  padding: 40px;
+  background-color: rgb(29, 19, 32);
+  border: solid rgb(57, 35, 60) 5px;
+  border-radius: 25px;
+}
+
 #name,
 #email {
   min-width: 50%;

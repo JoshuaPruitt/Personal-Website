@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import form from '../components/form.jsx'
 import '../style/App.css'
 
 //will contain all projects that I wish to display on the page
@@ -68,7 +69,7 @@ class PageData {
                     </p>
                 </div>
 
-                <div>
+                <div id='portfolioContiner'>
                     {projects.map((project) => (
                        <div id='projects' key={project.type}>
                          <a href={project.link}>
@@ -93,13 +94,19 @@ class PageData {
                     <input id="name" type='text'></input>
 
                     <label>Email Address: </label>
-                    <input id='email' type='text'></input>
+                    <input id='email' name='email' type='email'></input>
 
                     <label>Message: </label>
                     <input id='message' type='text'></input>
 
-                    <input id='submit' type='submit'></input>
+                    <button id='submit' type='submit'>Submit</button>
                 </form>
+                
+                {form.errorMessage && (
+                    <div>
+                        <p className='error-text'>{form.errorMessage}</p>
+                    </div>
+                )}
             </>
     )};
 
