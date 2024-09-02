@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #211c27;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,8 +26,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 320px;
+  min-height: 100vh; */
 }
 
 h1 {
@@ -77,12 +77,18 @@ button:focus-visible {
   }
 }
 
+#bottomBar {
+  border: solid rgb(48, 29, 59) 5px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: #1f162f;
+}
+
 #linksbar {
   display: flex;
   justify-content: center;
 }
 
 #linksbar a {
-  transform: translateY(50px);
   margin: 10px;
 }

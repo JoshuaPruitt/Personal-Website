@@ -30,6 +30,13 @@ const projects = [
         img: '../src/assets/placeholder-image.jpg',
         type: 'p4'
     },
+
+    {
+        name: 'placeholder project',
+        link: '#placeholder',
+        img: '../src/assets/placeholder-image.jpg',
+        type: 'p5'
+    },
 ]
 
 class PageData {
@@ -54,7 +61,7 @@ class PageData {
     portfolio() {
         return(
             <>
-                <div>
+                <div id="mainTextBox">
                     <h2>My Portfolio</h2>
                     <p>
                     This is my work!
@@ -74,12 +81,25 @@ class PageData {
         )};
 
     contactMe(){
+        
         return(
             <>
                 <div>
                     <h2>Contact Me</h2>
-                    {/* Content for layout 1 */}
                 </div>
+
+                <form>
+                    <label>Name: </label>
+                    <input id="name" type='text'></input>
+
+                    <label>Email Address: </label>
+                    <input id='email' type='text'></input>
+
+                    <label>Message: </label>
+                    <input id='message' type='text'></input>
+
+                    <input id='submit' type='submit'></input>
+                </form>
             </>
     )};
 

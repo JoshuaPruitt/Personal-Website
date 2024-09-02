@@ -49,7 +49,7 @@ function App(){
               {pageInfo}
             </div>
             
-            <footer>
+            <footer id='bottomBar'>
               <div id='linksbar'>
                 <a href='https://github.com/JoshuaPruitt'>
                     <img src='../src/assets/github-logo.png' width='50'height='50'></img>
