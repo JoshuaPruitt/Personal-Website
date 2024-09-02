@@ -30,7 +30,7 @@ No need to install.
 
 ## Usage
 
-Head to this link to view the page. Once the page has loaded you'll be greeted with the about me page. This page contains some basic information about me.
+Head to this <a href='https://joshuapruitt.netlify.app/'>link</a> to view the page. Once the page has loaded you'll be greeted with the about me page. This page contains some basic information about me.
 
 At the top is a bar that has mutiple buttons. Clicking on a button will take you to its corresponding page.
 
