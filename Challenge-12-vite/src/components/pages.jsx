@@ -7,14 +7,16 @@ const projects = [
     {
         name: "Employee Creator", 
         link: "https://github.com/JoshuaPruitt/Challenge-10-Employee-Creator",
-        img: "../src/assets/placeholder-image.jpg",
-        type: 'p1'
+        img: "../src/assets/employee-creator.png",
+        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        type: 'p1',
     },
 
     {
         name: 'Vehicle Creator',
         link: 'https://github.com/JoshuaPruitt/Challenge-08-Vehicle-Creator-',
-        img: "../src/assets/placeholder-image.jpg",
+        img: "../src/assets/vehicle-creator.png",
+        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
         type: 'p2'
     },
 
@@ -22,22 +24,36 @@ const projects = [
         name: 'Employee Payroll Tracker',
         link: 'https://github.com/JoshuaPruitt/challenge-03',
         img: '../src/assets/challenge-03-payroll-tracker.png',
+        logo: ['../src/assets/github-logo.png', '../src/assets/www-inv-logo.png'],
+        dep: 'https://joshuapruitt.github.io/challenge-03/',
         type: 'p3'
     },
 
     {
         name: 'README File Generator',
         link: 'https://github.com/JoshuaPruitt/Challenge-07',
-        img: '../src/assets/placeholder-image.jpg',
+        img: '../src/assets/readme-generator.png',
+        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
         type: 'p4'
     },
 
     {
-        name: 'placeholder project',
-        link: '#placeholder',
-        img: '../src/assets/placeholder-image.jpg',
+        name: 'project 1 (Scene it game)',
+        link: 'https://github.com/JoshuaPruitt/Project-1--Scene-it-?tab=readme-ov-file',
+        dep: 'https://joshuapruitt.github.io/Project-1--Scene-it-/questionsPage.html',
+        img: '../src/assets/project-1.png',
+        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
         type: 'p5'
     },
+
+    {
+        name: 'Blog website',
+        link: 'https://github.com/JoshuaPruitt/Challenge-04?tab=readme-ov-file',
+        dep: 'https://joshuapruitt.github.io/Challenge-04/',
+        img: '../src/assets/blog-website.png',
+        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        type: 'p6'
+    }
 ]
 
 class PageData {
@@ -47,9 +63,11 @@ class PageData {
                 <div>
                     <h2>About Me</h2>
                     {/* Content for about me */}
+                    <img className="pfp" src="../src/assets/IMG_1862.jpg" width='160' height='200'></img>
+
                     <p>Hello!
-                        My name is Joshua Pruitt. I am a junior web designer.
-                        I design webpages from the ground up. Some special interests of mine are Computers, Video Games, and Model kits.
+                        My name is Joshua Pruitt. I am a programmer taking the Coding bootcamp Web design course. 
+                        Some special interests of mine are Computers, Video Games, and Model kits.
                         Currently im trying to branch out into other areas of programming so that I can get into game design some day!
 
                         Thank you for taking the time to visit my page! 
@@ -65,16 +83,28 @@ class PageData {
                 <div id="mainTextBox">
                     <h2>My Portfolio</h2>
                     <p>
-                    This is my work!
+                    This is my work! Hover over an image to see its links!
                     </p>
                 </div>
 
                 <div id='portfolioContiner'>
                     {projects.map((project) => (
                        <div id='projects' key={project.type}>
-                         <a href={project.link}>
-                            <img id='greyscale' src={project.img} width='300' height='200' alt={project.name}></img>
-                         </a>
+                        <div className='projectImg' style={{  
+                                        backgroundImage: `url(${project.img})`,
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'contain',
+                                        backgroundRepeat: 'no-repeat'
+                                        }}>
+
+                        <a href={project.link}>
+                            <img className='github' src={project.logo[0]} width='50' height='50'></img>
+                        </a>
+                        
+                        <a href={project.dep || '#none'}>
+                            <img className='www' src={project.logo[1]} width='60' height='60'></img>             
+                        </a>
+                        </div>
                        </div>
                     ))}
                 </div>
@@ -116,6 +146,8 @@ class PageData {
                 <div>
                     <h2>My Resume</h2>
                 </div>
+
+                <h3>Click the link <a href='../src/assets/placeholder.txt' download>here</a> to download my resume!</h3>
             </>
     )};
 }

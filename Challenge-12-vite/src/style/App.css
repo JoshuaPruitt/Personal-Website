@@ -1,7 +1,8 @@
 p {
   margin: 20px;
   padding: 20px;
-  border: rgb(9, 38, 82) 5px solid;
+  background-color: rgb(29, 19, 32);
+  border: solid rgb(57, 35, 60) 5px;
   border-radius: 25px;
 }
 
@@ -20,11 +21,69 @@ input {
   margin: 10px 0;
 }
 
+.pfp {
+  background-color: rgb(29, 19, 32);
+  padding: 30px;
+  border: solid rgb(57, 35, 60) 5px;
+  border-radius: 25px;
+}
+
+.projectImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  /* width: 300px;
+  height: 200px; */
+}
+
+.github,
+.www {
+  animation: fadeIn 2s;
+  transition-timing-function: ease-in;
+  transition: 2.25s;
+  visibility: hidden;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projectImg:hover .github,
+.projectImg:hover .www {
+  visibility: visible;
+}
+
+.github {
+  transform: translateY(-12px);
+}
+
 #portfolioContiner {
   padding: 40px;
   background-color: rgb(29, 19, 32);
   border: solid rgb(57, 35, 60) 5px;
   border-radius: 25px;
+}
+
+#projects {
+  display: inline;
+  margin: 10px;
+}
+
+#projects div {
+  display: inline-block;
+  margin: 10px;
+}
+
+#projects img {
+  padding: 20px;
 }
 
 #name,
@@ -54,13 +113,4 @@ input {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-#projects {
-  display: inline;
-  margin: 10px;
-}
-
-#projects img {
-  margin: 10px;
 }
