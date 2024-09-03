@@ -52,11 +52,11 @@ function App(){
             <footer id='bottomBar'>
               <div id='linksbar'>
                 <a href='https://github.com/JoshuaPruitt'>
-                    <img src='../src/assets/github-logo.png' width='50'height='50'></img>
+                    <img src='../assets/github-logo.png' width='50'height='50'></img>
                 </a>
 
                 <a href='https://www.linkedin.com/in/joshua-pruitt-1a494a311/'>
-                    <img src='../src/assets/linkedin-logo.png' width='50' height='50'></img>
+                    <img src='../assets/linkedin-logo.png' width='50' height='50'></img>
                 </a>
               </div>
             </footer>

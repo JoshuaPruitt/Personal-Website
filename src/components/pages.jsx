@@ -7,24 +7,24 @@ const projects = [
     {
         name: "Employee Creator", 
         link: "https://github.com/JoshuaPruitt/Challenge-10-Employee-Creator",
-        img: "../src/assets/employee-creator.png",
-        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        img: "../assets/employee-creator.png",
+        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
         type: 'p1',
     },
 
     {
         name: 'Vehicle Creator',
         link: 'https://github.com/JoshuaPruitt/Challenge-08-Vehicle-Creator-',
-        img: "../src/assets/vehicle-creator.png",
-        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        img: "../assets/vehicle-creator.png",
+        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
         type: 'p2'
     },
 
     {
         name: 'Employee Payroll Tracker',
         link: 'https://github.com/JoshuaPruitt/challenge-03',
-        img: '../src/assets/challenge-03-payroll-tracker.png',
-        logo: ['../src/assets/github-logo.png', '../src/assets/www-inv-logo.png'],
+        img: '../assets/challenge-03-payroll-tracker.png',
+        logo: ['../assets/github-logo.png', '../assets/www-inv-logo.png'],
         dep: 'https://joshuapruitt.github.io/challenge-03/',
         type: 'p3'
     },
@@ -32,8 +32,8 @@ const projects = [
     {
         name: 'README File Generator',
         link: 'https://github.com/JoshuaPruitt/Challenge-07',
-        img: '../src/assets/readme-generator.png',
-        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        img: '../assets/readme-generator.png',
+        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
         type: 'p4'
     },
 
@@ -41,8 +41,8 @@ const projects = [
         name: 'project 1 (Scene it game)',
         link: 'https://github.com/JoshuaPruitt/Project-1--Scene-it-?tab=readme-ov-file',
         dep: 'https://joshuapruitt.github.io/Project-1--Scene-it-/questionsPage.html',
-        img: '../src/assets/project-1.png',
-        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        img: '../assets/project-1.png',
+        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
         type: 'p5'
     },
 
@@ -50,8 +50,8 @@ const projects = [
         name: 'Blog website',
         link: 'https://github.com/JoshuaPruitt/Challenge-04?tab=readme-ov-file',
         dep: 'https://joshuapruitt.github.io/Challenge-04/',
-        img: '../src/assets/blog-website.png',
-        logo: ['../src/assets/github-inv-logo.png', '../src/assets/www-inv-logo.png'],
+        img: '../assets/blog-website.png',
+        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
         type: 'p6'
     }
 ]
@@ -63,7 +63,7 @@ class PageData {
                 <div>
                     <h2>About Me</h2>
                     {/* Content for about me */}
-                    <img className="pfp" src="../src/assets/IMG_1862.jpg" width='160' height='200'></img>
+                    <img className="pfp" src="../assets/IMG_1862.jpg" width='160' height='200'></img>
 
                     <p>Hello!
                         My name is Joshua Pruitt. I am a programmer taking the Coding bootcamp Web design course. 
@@ -147,7 +147,7 @@ class PageData {
                     <h2>My Resume</h2>
                 </div>
 
-                <h3>Click the link <a href='../src/assets/placeholder.txt' download>here</a> to download my resume!</h3>
+                <h3>Click the link <a href='../assets/placeholder.txt' download>here</a> to download my resume!</h3>
             </>
     )};
 }
