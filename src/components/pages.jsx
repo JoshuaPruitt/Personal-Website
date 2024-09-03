@@ -15,6 +15,7 @@ import project1 from '../assets/project-1.png';
 import blogWebsite from '../assets/blog-website.png';
 
 import profilePicture from "../assets/IMG_1862.jpg";
+import placeholderResume from '../assets/placeholder.txt';
 
 //will contain all projects that I wish to display on the page
 const projects = [
@@ -161,7 +162,7 @@ class PageData {
                     <h2>My Resume</h2>
                 </div>
 
-                <h3>Click the link <a href='../src/assets/placeholder.txt' download>here</a> to download my resume!</h3>
+                <h3>Click the link <a href={placeholderResume} download>here</a> to download my resume!</h3>
             </>
     )};
 }
