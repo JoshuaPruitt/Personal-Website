@@ -2,6 +2,9 @@ import './style/index.css'
 import React, { useEffect, useState } from 'react'
 import PageData from './components/pages'
 
+import githubLogo from '../src/assets/github-logo.png';
+import linkedInLogo from '../src/assets/linkedin-logo.png';
+
 
 const actions = [
     {name: 'About Me', type: 'b1' },
@@ -52,11 +55,11 @@ function App(){
             <footer id='bottomBar'>
               <div id='linksbar'>
                 <a href='https://github.com/JoshuaPruitt'>
-                    <img src='../assets/github-logo.png' width='50'height='50'></img>
+                    <img src={githubLogo} width='50'height='50'></img>
                 </a>
 
                 <a href='https://www.linkedin.com/in/joshua-pruitt-1a494a311/'>
-                    <img src='../assets/linkedin-logo.png' width='50' height='50'></img>
+                    <img src={linkedInLogo} width='50' height='50'></img>
                 </a>
               </div>
             </footer>

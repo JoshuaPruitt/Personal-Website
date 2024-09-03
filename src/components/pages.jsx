@@ -2,29 +2,40 @@ import { useState } from 'react'
 import form from '../components/form.jsx'
 import '../style/App.css'
 
+import githubLogo from '../assets/github-logo.png'
+import githubInvLogo from '../assets/github-inv-logo.png';
+import wwwInvLogo from '../assets/www-inv-logo.png'
+
+import employeeCreator from "../assets/employee-creator.png";
+import vehicleCreator from "../assets/vehicle-creator.png";
+import payrollTracker from '../assets/challenge-03-payroll-tracker.png';
+import readMeGenerator from '../assets/readme-generator.png';
+import project1 from '../assets/project-1.png';
+import blogWebsite from '../assets/blog-website.png';
+
 //will contain all projects that I wish to display on the page
 const projects = [
     {
         name: "Employee Creator", 
         link: "https://github.com/JoshuaPruitt/Challenge-10-Employee-Creator",
-        img: "../assets/employee-creator.png",
-        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
+        img: employeeCreator,
+        logo: [githubInvLogo, wwwInvLogo],
         type: 'p1',
     },
 
     {
         name: 'Vehicle Creator',
         link: 'https://github.com/JoshuaPruitt/Challenge-08-Vehicle-Creator-',
-        img: "../assets/vehicle-creator.png",
-        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
+        img: vehicleCreator,
+        logo: [githubInvLogo, wwwInvLogo],
         type: 'p2'
     },
 
     {
         name: 'Employee Payroll Tracker',
         link: 'https://github.com/JoshuaPruitt/challenge-03',
-        img: '../assets/challenge-03-payroll-tracker.png',
-        logo: ['../assets/github-logo.png', '../assets/www-inv-logo.png'],
+        img: payrollTracker,
+        logo: [githubLogo, wwwInvLogo],
         dep: 'https://joshuapruitt.github.io/challenge-03/',
         type: 'p3'
     },
@@ -32,8 +43,8 @@ const projects = [
     {
         name: 'README File Generator',
         link: 'https://github.com/JoshuaPruitt/Challenge-07',
-        img: '../assets/readme-generator.png',
-        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
+        img: readMeGenerator,
+        logo: [githubInvLogo, wwwInvLogo],
         type: 'p4'
     },
 
@@ -41,8 +52,8 @@ const projects = [
         name: 'project 1 (Scene it game)',
         link: 'https://github.com/JoshuaPruitt/Project-1--Scene-it-?tab=readme-ov-file',
         dep: 'https://joshuapruitt.github.io/Project-1--Scene-it-/questionsPage.html',
-        img: '../assets/project-1.png',
-        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
+        img:  project1,
+        logo: [githubInvLogo, wwwInvLogo],
         type: 'p5'
     },
 
@@ -50,8 +61,8 @@ const projects = [
         name: 'Blog website',
         link: 'https://github.com/JoshuaPruitt/Challenge-04?tab=readme-ov-file',
         dep: 'https://joshuapruitt.github.io/Challenge-04/',
-        img: '../assets/blog-website.png',
-        logo: ['../assets/github-inv-logo.png', '../assets/www-inv-logo.png'],
+        img: blogWebsite,
+        logo: [githubInvLogo, wwwInvLogo],
         type: 'p6'
     }
 ]
@@ -63,7 +74,7 @@ class PageData {
                 <div>
                     <h2>About Me</h2>
                     {/* Content for about me */}
-                    <img className="pfp" src="../assets/IMG_1862.jpg" width='160' height='200'></img>
+                    <img className="pfp" src="../src/assets/IMG_1862.jpg" width='160' height='200'></img>
 
                     <p>Hello!
                         My name is Joshua Pruitt. I am a programmer taking the Coding bootcamp Web design course. 
@@ -147,7 +158,7 @@ class PageData {
                     <h2>My Resume</h2>
                 </div>
 
-                <h3>Click the link <a href='../assets/placeholder.txt' download>here</a> to download my resume!</h3>
+                <h3>Click the link <a href='../src/assets/placeholder.txt' download>here</a> to download my resume!</h3>
             </>
     )};
 }
