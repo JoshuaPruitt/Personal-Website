@@ -2,6 +2,7 @@ import { useState } from 'react'
 import form from '../components/form.jsx'
 import '../style/App.css'
 
+//file imports for correctly loading images on netlify's site
 import githubLogo from '../assets/github-logo.png'
 import githubInvLogo from '../assets/github-inv-logo.png';
 import wwwInvLogo from '../assets/www-inv-logo.png'
@@ -12,6 +13,8 @@ import payrollTracker from '../assets/challenge-03-payroll-tracker.png';
 import readMeGenerator from '../assets/readme-generator.png';
 import project1 from '../assets/project-1.png';
 import blogWebsite from '../assets/blog-website.png';
+
+import profilePicture from "../assets/IMG_1862.jpg";
 
 //will contain all projects that I wish to display on the page
 const projects = [
@@ -74,7 +77,7 @@ class PageData {
                 <div>
                     <h2>About Me</h2>
                     {/* Content for about me */}
-                    <img className="pfp" src="../src/assets/IMG_1862.jpg" width='160' height='200'></img>
+                    <img className="pfp" src={profilePicture} width='160' height='200'></img>
 
                     <p>Hello!
                         My name is Joshua Pruitt. I am a programmer taking the Coding bootcamp Web design course. 

@@ -5,7 +5,6 @@ import PageData from './components/pages'
 import githubLogo from '../src/assets/github-logo.png';
 import linkedInLogo from '../src/assets/linkedin-logo.png';
 
-
 const actions = [
     {name: 'About Me', type: 'b1' },
     {name: 'Portfolio', type:"b2"},
