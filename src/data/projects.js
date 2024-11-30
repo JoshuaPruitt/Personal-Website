@@ -3,13 +3,13 @@ import githubLogo from "../assets/github-logo.png";
 import githubInvLogo from "../assets/github-inv-logo.png";
 import wwwInvLogo from "../assets/www-inv-logo.png";
 
-import employeeCreator from "../assets/employee-creator.png";
-import vehicleCreator from "../assets/vehicle-creator.png";
-import payrollTracker from "../assets/challenge-03-payroll-tracker.png";
-import readMeGenerator from "../assets/readme-generator.png";
-import project1 from "../assets/project-1.png";
-import blogWebsite from "../assets/blog-website.png";
-import colorCanvas from "../assets/colorCanvasProject2.png";
+import employeeCreator from "../assets/personalProjects/employee-creator.png";
+import vehicleCreator from "../assets/personalProjects/vehicle-creator.png";
+import payrollTracker from "../assets/personalProjects/challenge-03-payroll-tracker.png";
+import readMeGenerator from "../assets/personalProjects/readme-generator.png";
+import project1 from "../assets/personalProjects/project-1.png";
+import blogWebsite from "../assets/personalProjects/blog-website.png";
+import colorCanvas from "../assets/personalProjects/colorCanvasProject2.png";
 
 //will contain all projects that I wish to display on the page
 export const projects = [

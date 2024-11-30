@@ -1,6 +1,6 @@
 import './style/index.css'
-import React, { useEffect, useState } from 'react'
-import PageData from './components/pages'
+import { useState } from 'react'
+import pageData from "./pages/index.ts"
 
 import githubLogo from '../src/assets/github-logo.png';
 import linkedInLogo from '../src/assets/linkedin-logo.png';
@@ -15,7 +15,6 @@ const actions = [
 function App(){
     let pageInfo
     const [content, setPage] = useState('b1')
-    const pageData = new PageData
     
     if (content == "Portfolio"){
       pageInfo = pageData.portfolio();
