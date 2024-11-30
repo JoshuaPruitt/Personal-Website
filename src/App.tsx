@@ -2,6 +2,7 @@ import './style/index.css'
 import { useState, useRef } from 'react'
 import pageData from "./pages/index.ts"
 import emailJs from '@emailjs/browser';
+import './style/App.css'
 
 const service_id = process.env.SERVICE_ID || "";
 const template_id = process.env.TEMPLATE_ID || "";
