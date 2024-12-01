@@ -1,5 +1,4 @@
 import './style/index.css'
-import { Worker } from '@react-pdf-viewer/core';
 import { useState, useRef } from 'react'
 import pageData from "./pages/index.ts"
 import emailJs from '@emailjs/browser';
@@ -47,11 +46,9 @@ function App(){
                   {pageData.aboutMe()}
               </div>
 
-              <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
               <div>
                   {pageData.resume()}
               </div>
-              </Worker>
 
               <div>
                   {pageData.portfolio()}
