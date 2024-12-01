@@ -15,8 +15,8 @@ const portfolio = () => {
 
                 <div id='portfolioContiner'>
                     {projects.map((project, index) => (
-                        <div id='projects'>
-                            <Project_Card key={index} backgroundImage={project.img} githubLink={project.link} linkedInLink={project.dep}></Project_Card>
+                        <div id='projects' key={index}>
+                            <Project_Card backgroundImage={project.img} githubLink={project.link} linkedInLink={project.dep}></Project_Card>
                         </div>
                     ))}
                 </div>
