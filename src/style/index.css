@@ -1,10 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  margin: 0;
-  padding: 0;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -21,9 +23,15 @@ html {
   scroll-behavior: smooth;
 }
 
+#root {
+  display: flex;
+  flex-direction: row;
+  padding: 0 !important;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #b9b9b9;
   text-decoration: inherit;
 }
 a:hover {
@@ -32,7 +40,9 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0px;
   display: flex;
+  flex-direction: row;
   /* min-width: 320px;
   min-height: 100vh; */
 }
@@ -71,6 +81,15 @@ button:focus-visible {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
+#linksbar {
+  display: flex;
+  justify-content: center;
+}
+
+#linksbar a {
+  margin: 10px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #2e2147;
@@ -82,20 +101,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-#bottomBar {
-  border: solid rgb(48, 29, 59) 5px;
-  border-radius: 25px;
-  margin-top: 20px;
-  background-color: #1f162f;
-}
-
-#linksbar {
-  display: flex;
-  justify-content: center;
-}
-
-#linksbar a {
-  margin: 10px;
 }

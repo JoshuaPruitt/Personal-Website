@@ -1,18 +1,51 @@
+
 nav {
+  background-color: wheat;
+}
+
+nav div {
   display: flex;
+  margin-left: 2.5rem;
+  margin-top: 5%;
   position: fixed;
+  left: 0;
   flex-direction: column;
   align-items: baseline;
 }
 
-body {
-  background-color: rgb(24, 17, 24);
+nav span {
+  font-size: 5rem;
+}
+
+nav div a {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+
+main {
+  background-color: rgb(44, 28, 44);
+  border: 10px solid rgb(57, 35, 60);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
 
-body div {
-  background-color: rgb(58, 42, 58);
+main div {
+  margin-top: 1.5rem;
+}
+
+main footer {
+  border: solid rgb(48, 29, 59) 5px;
+  border-radius: 25px;
+  margin: 1.5rem 20px 0 20px;
+  background-color: rgb(29, 19, 32);
+  margin-bottom: 1rem;
+}
+
+.footerImg {
+  filter: invert(1);
 }
 
 .introduction {
@@ -27,6 +60,7 @@ form {
   background-color: rgb(29, 19, 32);
   padding: 30px;
   border: solid rgb(57, 35, 60) 5px;
+  margin: 0 1.5rem;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -84,8 +118,6 @@ input {
 
 #portfolioContiner {
   padding: 40px;
-  background-color: rgb(29, 19, 32);
-  border: solid rgb(57, 35, 60) 5px;
   border-radius: 25px;
 }
 
