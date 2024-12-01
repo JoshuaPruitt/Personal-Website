@@ -8,8 +8,10 @@ const resume = () => {
                     <h2>My Resume</h2>
                 </div>
 
-                <h3>Click the link <a href={placeholderResume} download>here</a> to download my resume!</h3>
-            </>
+                <div className='resume'>
+                    <h3>Click the link <a href={placeholderResume} download>here</a> to download my resume!</h3>
+                </div>
+        </>
     )
 }
 

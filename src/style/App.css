@@ -1,3 +1,20 @@
+nav {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+body {
+  background-color: rgb(24, 17, 24);
+  display: flex;
+  flex-direction: column;
+}
+
+body div {
+  background-color: rgb(58, 42, 58);
+}
+
 .introduction {
   margin: 20px;
   padding: 20px;
