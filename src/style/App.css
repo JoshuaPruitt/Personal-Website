@@ -125,6 +125,12 @@ input {
   margin: 0 auto;
 }
 
+.pdfViewer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
 #projects {
   display: inline;
   margin: 10px;
