@@ -1,6 +1,8 @@
 import { projects } from '../data/projects.js'
 import '../style/App.css'
 
+import Project_Card from '../components/card.js';
+
 const portfolio = () => {
     return (
         <>
@@ -12,24 +14,10 @@ const portfolio = () => {
                 </div>
 
                 <div id='portfolioContiner'>
-                    {projects.map((project) => (
-                       <div id='projects' key={project.type}>
-                        <div className='projectImg' style={{  
-                                        backgroundImage: `url(${project.img})`,
-                                        backgroundPosition: 'center',
-                                        backgroundSize: 'contain',
-                                        backgroundRepeat: 'no-repeat'
-                                        }}>
-
-                        <a href={project.link}>
-                            <img className='github' src={project.logo[0]} width='50' height='50'></img>
-                        </a>
-                        
-                        <a href={project.dep || '#none'}>
-                            <img className='www' src={project.logo[1]} width='60' height='60'></img>             
-                        </a>
+                    {projects.map((project, index) => (
+                        <div id='projects' key={index}>
+                            <Project_Card backgroundImage={project.img} githubLink={project.link} linkedInLink={project.dep}></Project_Card>
                         </div>
-                       </div>
                     ))}
                 </div>
             </>
