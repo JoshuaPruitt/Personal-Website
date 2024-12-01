@@ -9,7 +9,7 @@ export default function Project_Card(props: any){
     }
 
     return (
-        <div className="card" key={props.key}>
+        <div className="card">
             <div className='projectImg' style={{  
                 backgroundImage: `url(${cardStyle.backgroundImage})`,
                 backgroundPosition: 'center',

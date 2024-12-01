@@ -121,6 +121,10 @@ input {
   border-radius: 25px;
 }
 
+#react-pdf {
+  margin: 0 auto;
+}
+
 #projects {
   display: inline;
   margin: 10px;
@@ -158,9 +162,8 @@ input {
   flex-direction: column;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/*Keep disabled or it will overlay the text from the pdf onto the page */
+.rpv-core__text-layer {
+  display: none;
 }
+
