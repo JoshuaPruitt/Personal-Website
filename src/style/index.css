@@ -3,6 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
+  margin: 0;
+  padding: 0;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #211c27;
@@ -12,6 +15,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
