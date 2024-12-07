@@ -5,7 +5,4 @@ declare module "*.gif";
 declare module "*.svg";
 declare module "*.txt";
 
-//pdf files for resume and css files for widget
 declare module "*.pdf";
-declare module "*.css";
-declare module "*.min.js";
