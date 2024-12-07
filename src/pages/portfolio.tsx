@@ -14,9 +14,7 @@ const portfolio = () => {
 
                 <div id='portfolio_Container'>
                     {projects.map((project, index) => (
-                        <div id='project_card' key={index}>
-                            <Project_Card link={project.link} img={project.img}></Project_Card>
-                        </div>
+                        <Project_Card key={index} link={project.link} img={project.img}></Project_Card>
                     ))}
                 </div>
             </>
