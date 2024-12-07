@@ -1,0 +1,10 @@
+#portfolio_Container {
+  display: flex;
+  flex-direction: row;
+}
+
+#project_card {
+}
+
+@media screen(max) {
+}
