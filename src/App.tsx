@@ -86,7 +86,8 @@ function App(){
                   </a>
                 </div>
               </footer>
-            </main>    
+            </main>  
+ 
         </>
     )   
 }
