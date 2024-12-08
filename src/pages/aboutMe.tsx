@@ -10,7 +10,7 @@ const aboutMe = () => {
             {/* <img className="pfp" src={mePicture} width='160' height='200'></img> */}
         </div>
 
-        <div className='introduction'>
+        <div className='container'>
             <p>Hello!</p>
 
             <p>
