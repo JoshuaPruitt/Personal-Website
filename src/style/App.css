@@ -61,7 +61,7 @@ form {
   background-color: rgb(29, 19, 32);
   padding: 30px;
   border: solid rgb(57, 35, 60) 5px;
-  margin: 0 7.5rem;
+  margin: 1.5rem 7.5rem 2.5rem 7.5rem;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
