@@ -1,4 +1,3 @@
-// import mePicture from "../assets/personalPhotos/IMG_1862.jpg";
 import '../style/App.css'
 
 const aboutMe = () => {
@@ -7,7 +6,6 @@ const aboutMe = () => {
         <div>
             <h2>About Me</h2>
             {/* Content for about me */}
-            {/* <img className="pfp" src={mePicture} width='160' height='200'></img> */}
         </div>
 
         <div className='container'>
