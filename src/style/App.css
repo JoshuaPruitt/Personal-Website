@@ -4,8 +4,8 @@ nav {
 
 nav div {
   display: flex;
-  margin-left: 2.5rem;
-  margin-top: 5%;
+  margin-left: 4.5rem;
+  margin-top: 4%;
   position: fixed;
   left: 0;
   flex-direction: column;
@@ -25,9 +25,12 @@ nav div a {
 main {
   background-color: rgb(44, 28, 44);
   border: 10px solid rgb(57, 35, 60);
-  border-radius: 5px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
+
+  margin-top: 1.5rem;
+  max-width: 1080px;
 }
 
 main div {
@@ -46,8 +49,8 @@ main footer {
   filter: invert(1);
 }
 
-.introduction {
-  margin: 20px;
+.container {
+  margin: 20px 5% 20px 5%;
   padding: 20px;
   background-color: rgb(29, 19, 32);
   border: solid rgb(57, 35, 60) 5px;
@@ -58,7 +61,7 @@ form {
   background-color: rgb(29, 19, 32);
   padding: 30px;
   border: solid rgb(57, 35, 60) 5px;
-  margin: 0 1.5rem;
+  margin: 0 7.5rem;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
