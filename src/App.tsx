@@ -4,7 +4,6 @@ import pageData from "./pages/index.ts"
 import emailJs from '@emailjs/browser';
 import './style/App.css'
 
-
 const service_id = process.env.SERVICE_ID || "";
 const template_id = process.env.TEMPLATE_ID || "";
 const public_key = process.env.PUBLIC_KEY || "";
@@ -40,6 +39,15 @@ function App(){
             <main>
               <div>
                 <h1 id='logo'>Joshua Pruitt</h1>
+                <div id='linksbar'>
+                  <a href='https://github.com/JoshuaPruitt'>
+                      <img src={githubLogo} width='50'height='50' className='footerImg'></img>
+                  </a>
+
+                  <a href='https://www.linkedin.com/in/joshua-pruitt-1a494a311/'>
+                      <img src={linkedInLogo} width='50' height='50' className='footerImg'></img>
+                  </a>
+                </div>
               </div>
               {/*Will contain the about me section of the page */}
               <div>
@@ -74,18 +82,6 @@ function App(){
                     <input id='submit' type='submit' value="Send Email"/>
                 </form>
               </div>
-
-              <footer>
-                <div id='linksbar'>
-                  <a href='https://github.com/JoshuaPruitt'>
-                      <img src={githubLogo} width='50'height='50' className='footerImg'></img>
-                  </a>
-
-                  <a href='https://www.linkedin.com/in/joshua-pruitt-1a494a311/'>
-                      <img src={linkedInLogo} width='50' height='50' className='footerImg'></img>
-                  </a>
-                </div>
-              </footer>
             </main>  
  
         </>
