@@ -122,6 +122,10 @@ input {
   border-radius: 25px;
 }
 
+.badges_container a img {
+  margin: 0 5px 0 0;
+}
+
 #react-pdf {
   margin: 0 auto;
 }
