@@ -1,0 +1,41 @@
+[ 
+  {
+    "link": "https://github.com/JoshuaPruitt/Personal-Website",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=JoshuaPruitt&repo=Personal-Website&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  }, 
+
+  {
+    "link": "https://github.com/AlecTaber/LoopLab",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=AlecTaber&repo=LoopLab&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  },
+
+  {
+    "link": "https://github.com/Mekenna-Baker/Color-Canvas",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=Mekenna-Baker&repo=Color-Canvas&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  },
+
+  {
+    "link": "https://github.com/JoshuaPruitt/Challenge-21-Python-Order-System",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=JoshuaPruitt&repo=Challenge-21-Python-Order-System&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  },
+
+  {
+    "link": "https://github.com/JoshuaPruitt/Challenge-17-MongoDB-routing",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=JoshuaPruitt&repo=Challenge-17-MongoDB-routing&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  },
+
+  {
+    "link": "https://github.com/JoshuaPruitt/Challenge-19-Cypress-Testing",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=JoshuaPruitt&repo=Challenge-19-Cypress-Testing&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  },
+
+  {
+    "link": "https://github.com/JoshuaPruitt/Challenge-18-Book-Collection",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=JoshuaPruitt&repo=Challenge-18-Book-Collection&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  },
+
+  {
+    "link": "https://github.com/JoshuaPruitt/Scene-It-Game-Project-01",
+    "img": "https://github-readme-stats.vercel.app/api/pin/?username=JoshuaPruitt&repo=Scene-It-Game-Project-01&bg_color=1A1B27&text_color=32BD90&border_color=E4E2E2"
+  }
+]
