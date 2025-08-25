@@ -1,4 +1,4 @@
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/Resume-Revise-left.pdf";
 import '../style/App.css'
 
 const resume = () => {
