@@ -1,7 +1,7 @@
 export const AboutMe = () => {
     return (
         <div className="#aboutMe flex flex-col m-3">
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold mb-3">
                 <h2>About Me</h2>
             </div>
 
