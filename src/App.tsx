@@ -2,6 +2,7 @@ import { Nav } from "./components/nav"
 import { Header } from "./components/header"
 import { AboutMe } from "./components/aboutMe"
 import { Resume } from "./components/resume"
+import { Projects } from "./components/projects"
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
         <Resume></Resume>
       </div>
 
+      <div className="m-5">
+        <Projects></Projects>
+      </div>
     </>
   )
 }
