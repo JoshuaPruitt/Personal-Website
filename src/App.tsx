@@ -1,6 +1,7 @@
 import { Nav } from "./components/nav"
 import { Header } from "./components/header"
 import { AboutMe } from "./components/aboutMe"
+import { Resume } from "./components/resume"
 
 function App() {
 
@@ -16,6 +17,10 @@ function App() {
 
       <div className="m-5">
         <AboutMe></AboutMe>
+      </div>
+
+      <div className="m-5">
+        <Resume></Resume>
       </div>
 
     </>
