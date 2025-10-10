@@ -1,17 +1,17 @@
 export const AboutMe = () => {
     return (
-        <div className="#aboutMe flex flex-col m-3">
+        <div className="flex flex-col m-3">
             <div className="text-2xl font-bold mb-3">
                 <h2>About Me</h2>
             </div>
 
             <div className="text-lg ">
                 <p>
-                    Hello! My name is Joshua Pruitt and I am a Web Developer. Currently I am looking for a career to help me gain experience developing and creating applications.
+                    Hello! My name is Joshua Pruitt and I am a Web Developer. Currently I am looking for a career to help me gain experience developing and creating web applications.
                 </p><br/>
 
                 <p>
-                    I have earned a certification in full stack development from the University of Utah by completing their full stack development bootcamp. The program taught me the many facets of building end to end applications, as well as keeping my code consistent and quality. 
+                    I have earned a certificate of completion from the University of Utah by completing their full stack development bootcamp. The program taught me the many facets of building end to end applications, as well as keeping my code consistent and quality. 
                 </p><br/>
 
                 <p>

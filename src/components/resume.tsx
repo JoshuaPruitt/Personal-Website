@@ -14,7 +14,7 @@ export const Resume = () => {
 
             <div className="flex text-gray-600 mt-2">
                 <h3>
-                    Click the link <a href={resume} download className="font-bold">here</a> to download my resume!
+                    Click <a href={resume} download className="font-bold text-gray-700">here</a> to download my resume!
                 </h3>
             </div>
         </div>

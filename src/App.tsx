@@ -1,8 +1,4 @@
-import { Nav } from "./components/nav"
-import { Header } from "./components/header"
-import { AboutMe } from "./components/aboutMe"
-import { Resume } from "./components/resume"
-import { Projects } from "./components/projects"
+import { Nav, Header, AboutMe, Resume, Projects, Footer } from "./components/index";
 
 function App() {
 
@@ -26,6 +22,10 @@ function App() {
 
       <div className="m-5">
         <Projects></Projects>
+      </div>
+
+      <div>
+        <Footer></Footer>
       </div>
     </>
   )
